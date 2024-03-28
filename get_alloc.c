@@ -73,6 +73,7 @@ void automem_free(void *ptr)
 		tmp = alloc;
 		alloc = alloc->next;
 		free(tmp->ptr);
+		free(tmp);
 	}
 	else
 	{
