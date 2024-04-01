@@ -25,5 +25,4 @@ void	free_garbage(void)
 		alloc = alloc->next;
 		free(tmp->ptr);
 	}
-	free(tmp);
 }
